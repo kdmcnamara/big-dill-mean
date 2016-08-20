@@ -1,0 +1,11 @@
+{
+  "name": "big-dill-mean",
+  "version": "1.0.0",
+  "description": "MEAN stack website for Big Dill and the Boys - a jam band from Milwaukee, Wisconsin",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

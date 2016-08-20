@@ -1,0 +1,334 @@
+/********************
+	   GENERAL
+********************/
+
+
+#wrapper {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+
+
+a{
+  text-decoration: none;
+}
+
+img.displayed {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border-color: #599a68;
+}
+
+img {
+	max-width: 100%;
+}
+
+/********************
+	   HEADING
+********************/
+
+
+
+
+
+#logo {
+	text-align: center;
+	margin: 0;
+}
+
+h1 {
+	font-family: 'Changa One', sans-serif;
+	margin: 15px 0;
+	text-align: center;
+	font-size: 1.75em;
+	line-height: 0.8em;
+	font-weight: normal;
+}
+
+h2{
+	font-size: 0.75em;
+	margin: -5px 0 0;
+	font-weight: normal;
+	text-align: center;
+}
+
+#header {
+	background: #802A2A;
+	border-color: #802A2A;
+	float: left; 
+	margin: 0 0 30px 0;
+	padding: 5px 0 0 0;
+	width: 100%;
+}
+
+/* 
+div.fb-page{
+	clear: both;
+}
+ */
+
+
+
+
+/********************
+	 NAVIGATION
+********************/
+
+
+
+
+
+/* green header */
+
+
+/* nav element on mobile devices */
+
+
+nav  {
+	background: #802A2A;
+	text-align: center;
+	padding: 10px 0 0;
+	margin: 20px 0 0;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0 10px;
+	padding: 0;
+	display: 	
+}
+
+nav li {
+	display: inline-block;
+}
+
+nav a {
+	font-weight: 800;
+	padding: 15px 10px;
+}
+
+
+/********************
+	   COLORS
+********************/
+
+
+
+
+#backpic {
+	background-image: url ("https://scontent-mia1-1.xx.fbcdn.net/hphotos-xtp1/v/t1.0-9/12118857_1500794840246418_3061131379015512765_n.jpg?oh=3df472d96c74b5a7a1baa0ca1b06573c&oe=5708E4E4");
+}
+
+/* logo text */
+h1, h2 {
+	color: #fff; 
+}
+
+/* links */
+a {
+	color: #6ab47b;
+}
+
+
+
+/* nav links */
+nav a, nav a:visited {
+	color: #fff;
+}
+
+/* site body */
+body {
+
+	background-color: #599a68;
+	color: #999;
+}
+
+/* selected nav link */
+nav a.selected, nav a:hover {
+	color: #32673f
+}
+
+
+
+/*******************
+  PAGE: PORTFOLIO - specific to homepage
+*******************/
+
+
+
+#gallery {
+	margin: 0 10% 0 10%;
+	padding: 0;
+	list-style: none;
+}
+
+
+#gallery li {
+	float: left;
+	width 100%;
+	margin: 1%;
+	background-color: #ffd1b3;
+	color: #6dc3c7;
+}
+
+
+#gallery li a p {
+	margin: -1%;
+	padding: 5%;
+	font-size: 0.75em;
+	color: #bdc3c7;
+}
+
+
+
+#socialWidgets{
+	display: inline;
+}
+#soundcloud {
+	clear: left;
+	padding: 1%;
+	margin: 0 0.2%;
+}
+
+.fb-page {
+	margin: 0 1%
+}
+
+fieldset {
+	border:1px solid #999;
+    border-radius:12px;
+    box-shadow:0 0 10px #fff;
+	width: 40%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+legend {
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 20px;
+	color: #000;
+}
+
+/* 
+
+fieldset p {
+	clear: both;
+	padding: 5px;
+}
+ */
+
+
+p > label > span {
+	color: #000;
+}
+
+span > div  {
+    position: fixed;
+    top: 20px;
+}
+
+form {
+	color: #599a68;
+}
+	
+
+/*******************
+	  FOOTER
+*******************/
+
+
+ 
+ 
+footer {
+	font-size: 0.75em;
+	text-align: center;
+	clear: both;
+	padding-top: 50px;
+	color: #ccc;	
+}
+
+/**************
+	jQuery
+**************/
+
+
+p.spoiler {
+	color: #003300;
+	margin-right: 150px;
+	margin-left: 150px;
+}	
+
+p.spoiler2 {
+	color: #003300;
+	margin-right: 150px;
+	margin-left: 150px;
+}	
+
+p.spoiler3 {
+	color: #003300;
+	margin-right: 150px;
+	margin-left: 150px;
+}	
+
+p.spoiler4 {
+	color: #003300;
+	margin-right: 150px;
+	margin-left: 150px;
+}	
+
+p.spoiler5 {
+	color: #003300;
+	margin-right: 150px;
+	margin-left: 150px;
+}	
+
+img.nick {
+	/* 
+display: block;
+    margin-left: auto;
+    margin-right: auto
+ */
+ 	border-radius: 50%;
+ 	clear: left;
+ 	float: left;
+ 	margin-right: 100px;
+ 	}
+
+#overlay {
+	background: black;
+	width: 100%;
+	height: 100%
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+
+/************
+	ABOUT
+	
+************/
+
+
+
+.button {
+	display: block;
+	font-size: 25px;
+}
+
+
+
+/************
+	CONTACT
+	
+************/
+
+
+
+#contact p {
+	color: 000;
+	text-align: center;
+}
