@@ -5,18 +5,19 @@
   <link href="styles/main.css" rel='stylesheet' type="text/css">
   <link href='https://fonts.googleapis.com/css?family=Changa+One|Open+Sans:300italic,700italic,800,400' rel='stylesheet' type='text/css'>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script> 
-   $(function(){
-    $("#header").load("dill-header.html");
-    $("#footer").load("dill-footer.html");
-   });    
-</script>
 </head>
    <!-- Header -->
-<body ng-app="bigDillApp">
-<div id="header"></div>
-<h1>This page in under construction!</h1>
-<div id="footer"></div>
-<script src="vendor/angular.js" type="text/javascript"></script>
-<script src="scripts/app.js" type="text/javascript"></script>
-<script src="scripts/hello-world.js" type="text/javascript"></script> <!-- after app.js -->
+<body ng-app="bigDillApp" ng-controller="mainCtrl">
+  <header></header>
+  <h1>This page in under construction!</h1>
+  <footer></footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.2/angular-animate.min.js">        </script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.10.3/TweenMax.min.js"></script>
+  <script src="scripts/app.js" type="text/javascript"></script>
+  <script src="scripts/controllers/main.js" type="text/javascript"></script> <!-- after app.js -->
+  <script src="scripts/services/data.js" type="text/javascript"></script>
+  <script src="scripts/directives/header.js" type="text/javascript"></script>
+  <script src="scripts/directives/footer.js" type="text/javascript"></script>
+</body>

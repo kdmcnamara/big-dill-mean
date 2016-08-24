@@ -55,7 +55,7 @@ h2{
 	text-align: center;
 }
 
-#header {
+header {
 	background: #802A2A;
 	border-color: #802A2A;
 	float: left; 
@@ -241,7 +241,6 @@ form {
 
 
  
- 
 footer {
 	font-size: 0.75em;
 	text-align: center;
@@ -255,56 +254,6 @@ footer {
 **************/
 
 
-p.spoiler {
-	color: #003300;
-	margin-right: 150px;
-	margin-left: 150px;
-}	
-
-p.spoiler2 {
-	color: #003300;
-	margin-right: 150px;
-	margin-left: 150px;
-}	
-
-p.spoiler3 {
-	color: #003300;
-	margin-right: 150px;
-	margin-left: 150px;
-}	
-
-p.spoiler4 {
-	color: #003300;
-	margin-right: 150px;
-	margin-left: 150px;
-}	
-
-p.spoiler5 {
-	color: #003300;
-	margin-right: 150px;
-	margin-left: 150px;
-}	
-
-img.nick {
-	/* 
-display: block;
-    margin-left: auto;
-    margin-right: auto
- */
- 	border-radius: 50%;
- 	clear: left;
- 	float: left;
- 	margin-right: 100px;
- 	}
-
-#overlay {
-	background: black;
-	width: 100%;
-	height: 100%
-	position: absolute;
-	top: 0;
-	left: 0;
-}
 
 
 /************
@@ -315,8 +264,9 @@ display: block;
 
 
 .button {
-	display: block;
+	background: #802A2A;
 	font-size: 25px;
+	border-radius: 25px;
 }
 
 
@@ -326,9 +276,15 @@ display: block;
 	
 ************/
 
-
-
-#contact p {
-	color: 000;
+.formInput {
 	text-align: center;
 }
+
+
+
+
+
+
+
+
+
