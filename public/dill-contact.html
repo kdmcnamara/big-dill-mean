@@ -9,7 +9,7 @@
    <!-- Header -->
 <body ng-app="bigDillApp" ng-controller="mainCtrl">
   <header></header>
-  <form method="post" action="/api/emails" id="contactForm">
+  <form method="post" action="#" id="contactForm" ng-init="email.submitted = false">
   <fieldset>
     <div class="formInput">
       <legend><h1 id="contactHeader">Contact Us!:</h1></legend>
@@ -19,10 +19,17 @@
       <h1>Message:</h1><br>
       <textarea rows="10" cols="50" name="emailMessage" form="contactForm"></textarea><br><br>
       <input id="contactCheckbox" type="checkbox" name="emailNewSubscriber"><h1>Subscribe to our newsletter!</h1>
-      <input class="button" type="submit" value="Submit">
+      <input class="button" type="submit" value="Submit" ng-click="email.submitted = !email.submitted">
     </div>
   </fieldset>
 </form>
+
+  <div id="contactMessageWrapper"
+    <ul>
+      <li  class="contactMessage" ng-show="email.submitted"><h2 class="contactMessage">Your message has been sent. Thank you!</h2></li> 
+      <li class="contactMessage"><h2 class="contactMessage">For booking inquiries, please email: bigdillandtheboys@gmail.com</h2></li>
+    </ul>
+  </div>
 
   <footer></footer>
 

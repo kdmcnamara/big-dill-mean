@@ -30,20 +30,20 @@ router.get('/emailsubscribers', function(req, res) {
 });
 
 //POST ROUTE
-router.post('/emails', function(req, res) {
-    var emailAddress = req.body.emailAddress;
-    var emailMessage = req.body.emailMessage;
-    var emailNewSubscriber = req.body.emailNewSubscriber;
-    // res.send(emailAddress + ' ' + emailMessage + ' ' + ' ' + emailNewSubscriber);
+// router.post('/dill-contact.html', function(req, res) {
+//     var emailAddress = req.body.emailAddress;
+//     var emailMessage = req.body.emailMessage;
+//     var emailNewSubscriber = req.body.emailNewSubscriber;
+//     // res.send(emailAddress + ' ' + emailMessage + ' ' + ' ' + emailNewSubscriber);
 
-    Email.create({address: emailAddress, message: emailMessage, 
-				newSubscriber: emailNewSubscriber}, function(err, email) {
-		if(err) {
-			return res.status(500).json({err: err.message});
-		}
-			res.json({'email': email, message: 'Email Created!'});
-	});
-});
+//     Email.create({address: emailAddress, message: emailMessage, 
+// 				newSubscriber: emailNewSubscriber}, function(err, email) {
+// 		if(err) {
+// 			return res.status(500).json({err: err.message});
+// 		}
+// 			res.json({'email': email, message: 'Email Created!'});
+// 	});
+// });
 
 
 
