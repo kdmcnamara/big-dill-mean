@@ -5,10 +5,15 @@ var parser = require('body-parser');
 var router = require('./api');
 var Email = require('./models/email.js');
 
+var http = require('http');
+var port = 3000;
+
 var app = express();
 
 require('./database');
 require('./seed')
+
+
 
 app.use('/', express.static('public'));
 app.use(parser.json());
@@ -30,8 +35,6 @@ app.post('/dill-contact.html', function(req, res) {
 	});
 });
 
-
-
-app.listen(3000, function () {
+app.listen(process.env.PORT || 3000, () =>  {
 	console.log("Server is running on port 3000!");
-})
+});
