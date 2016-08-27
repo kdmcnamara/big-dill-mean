@@ -9,7 +9,7 @@
    <!-- Header -->
 <body ng-app="bigDillApp" ng-controller="mainCtrl">
   <header></header>
-  <form method="post" action="#" id="contactForm" ng-init="email.submitted = false">
+  <form ng-controller="formCtrl" method="post" action="#" id="contactForm" ng-init="email.submitted = false">
   <fieldset>
     <div class="formInput">
       <legend><h1 id="contactHeader">Contact Us!:</h1></legend>

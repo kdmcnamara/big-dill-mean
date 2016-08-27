@@ -1,1 +1,12 @@
 xKH3oajUJFsS
+
+instance id 
+i-0fdb30967f1aad2c4
+
+public dns
+24.177.126.247
+
+path to folder 
+/Users/kevinmcnamara/big-dill-mean/resources
+
+ssh -i "/Users/kevinmcnamara/big-dill-mean/resources/BigDillMEAN.pem" ubuntu@24.177.126.247

@@ -5,4 +5,9 @@ angular.module('bigDillApp') // No new module
       $http.get('/api/members')
       .then(callback);
     }
+
+    this.sendForm = function(callback) {
+    	$http.post('/dill-contact.html')
+    	.then(callback);
+    }
 });
