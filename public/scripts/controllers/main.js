@@ -21,10 +21,6 @@ angular.module('bigDillApp') // No new module
             {
                 image: 'https://scontent-ord1-1.xx.fbcdn.net/v/t1.0-9/13254365_1638049276520973_1802255899031233423_n.jpg?oh=4aaf90779a9ae0efd31c48ab5c79f3ef&oe=5821C8E3',
                 description: 'Image 02'
-            },
-            {
-                image: 'https://scontent-ord1-1.xx.fbcdn.net/v/t1.0-9/12924364_1607771792882055_2533279527692389264_n.jpg?oh=06117597d37e74da2ed8ce5e79a4e758&oe=5818C865',
-                description: 'Image 03'
             }
     ];
   
@@ -86,11 +82,5 @@ angular.module('bigDillApp') // No new module
         }
     };
 })
-.controller('formCtrl', function($scope, dataService) {
-    
-    $scope.sendForm = function() {
 
-    }
-    
-});
 

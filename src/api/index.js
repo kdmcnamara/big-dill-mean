@@ -30,20 +30,20 @@ router.get('/emailsubscribers', function(req, res) {
 });
 
 //POST ROUTE
-// router.post('/dill-contact.html', function(req, res) {
-//     var emailAddress = req.body.emailAddress;
-//     var emailMessage = req.body.emailMessage;
-//     var emailNewSubscriber = req.body.emailNewSubscriber;
-//     // res.send(emailAddress + ' ' + emailMessage + ' ' + ' ' + emailNewSubscriber);
+router.post('/emails', function(req, res) {
 
-//     Email.create({address: emailAddress, message: emailMessage, 
-// 				newSubscriber: emailNewSubscriber}, function(err, email) {
-// 		if(err) {
-// 			return res.status(500).json({err: err.message});
-// 		}
-// 			res.json({'email': email, message: 'Email Created!'});
-// 	});
-// });
+	Email.create({
+		address: req.body.address,
+		message: req.body.message,
+		newSubscriber: req.body.newSubscriber
+	}, function(err, email) {
+		if(err) {
+			return res.status(500).json({err: err.message});
+		}
+			res.json({'email': email, message: 'Email Created!'});
+	});
+	
+});
 
 
 
@@ -53,16 +53,16 @@ router.get('/emailsubscribers', function(req, res) {
 //TODO: Add DELETE route to delete entries 
 
 //WARNING - delete request will delete all posts
-// router.delete('/emails', function(req, res){
-//     console.log("Deleting");
-//     Email.find( {}, function ( err, email ){
-//         Email.remove( function ( err, email ){
-//             if (err) {
-//             	return res.send(err);
-//             }
-//         res.json({ email: 'Deleted' });
-//         });
-//     });
-// });
+router.delete('/emails', function(req, res){
+    console.log("Deleting");
+    Email.find( {}, function ( err, email ){
+        Email.remove( function ( err, email ){
+            if (err) {
+            	return res.send(err);
+            }
+        res.json({ email: 'Deleted' });
+        });
+    });
+});
 
 module.exports = router;

@@ -6,8 +6,4 @@ angular.module('bigDillApp') // No new module
       .then(callback);
     }
 
-    this.sendForm = function(callback) {
-    	$http.post('/dill-contact.html')
-    	.then(callback);
-    }
 });

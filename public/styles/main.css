@@ -264,9 +264,20 @@ footer {
 
 
 .button {
+	display: block;
 	background: #802A2A;
 	font-size: 25px;
 	border-radius: 25px;
+	margin: auto;
+}
+
+.checkbox {
+	display: block;
+	background: #802A2A;
+	font-size: 25px;
+	border-radius: 25px;
+	margin: auto;
+	margin-bottom: 15px;
 }
 
 
@@ -276,8 +287,13 @@ footer {
 	
 ************/
 
-.formInput {
+
+#emailForm {
 	text-align: center;
+	border-radius: 5px;
+    background-color: #166123;
+    margin: auto;
+	width: 60%;
 }
 
 #contactMessageWrapper {
@@ -289,11 +305,20 @@ footer {
 	word-wrap: break-word;
 }
 
+.contactMessageA {
+	color: #fff;
+	font-size: 18px;
+	list-style: none;
+	text-align: center;
+	margin: -25px 15px 0 0;
+}
+
 .contactMessage {
 	color: #fff;
 	font-size: 18px;
 	list-style: none;
-	position: relative;
+	text-align: center;
+	margin: 0 15px 0 0;
 }
 
 /*********/
@@ -329,7 +354,7 @@ footer {
     top: 50%;
     margin-top: -35px;
     width: 16px;
-    height: 31px;
+    height: 27px;
     outline: none;
     cursor: pointer;
     background: url(../assets/img/blank.gif) no-repeat;
@@ -371,7 +396,7 @@ NAV
     position: absolute;
     z-index: 1002;
     left: 0;
-    bottom: -4px;
+    bottom: 0px;
     right: 0;
     height: 48px;
 }
