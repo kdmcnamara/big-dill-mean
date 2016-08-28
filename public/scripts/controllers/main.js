@@ -87,8 +87,10 @@ angular.module('bigDillApp') // No new module
     };
 })
 .controller('formCtrl', function($scope, dataService) {
-    dataService.sendForm(function(response) {
-        console.log(response.data);
-    });
+    
+    $scope.sendForm = function() {
+
+    }
+    
 });
 

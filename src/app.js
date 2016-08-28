@@ -32,10 +32,18 @@ app.post('/dill-contact.html', function(req, res) {
 			return res.status(500).json({err: err.message});
 		}
 	});
+	// var email = req.body;
+    // res.send(emailAddress + ' ' + emailMessage + ' ' + ' ' + emailNewSubscriber);
+
+ //    Email.create(email, function(err, email) {
+	// 	if(err) {
+	// 		return res.status(500).json({err: err.message});
+	// 	}
+	// });
 });
 
 var server = http.createServer(app);
 
-app.listen(process.env.PORT || 3000, () =>  {
-	console.log("Server is running on port 3000!");
+app.listen(process.env.PORT || 8080, () =>  {
+	console.log("Server is running on port 8080!");
 });
