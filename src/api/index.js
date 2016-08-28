@@ -53,16 +53,16 @@ router.get('/emailsubscribers', function(req, res) {
 //TODO: Add DELETE route to delete entries 
 
 //WARNING - delete request will delete all posts
-router.delete('/emails', function(req, res){
-    console.log("Deleting");
-    Email.find( {}, function ( err, email ){
-        Email.remove( function ( err, email ){
-            if (err) {
-            	return res.send(err);
-            }
-        res.json({ email: 'Deleted' });
-        });
-    });
-});
+// router.delete('/emails', function(req, res){
+//     console.log("Deleting");
+//     Email.find( {}, function ( err, email ){
+//         Email.remove( function ( err, email ){
+//             if (err) {
+//             	return res.send(err);
+//             }
+//         res.json({ email: 'Deleted' });
+//         });
+//     });
+// });
 
 module.exports = router;
