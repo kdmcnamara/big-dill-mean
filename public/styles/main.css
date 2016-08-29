@@ -58,7 +58,7 @@ h2{
 header {
 	background: #802A2A;
 	border-color: #802A2A;
-	float: left; 
+	/*float: left; */
 	margin: 0 0 30px 0;
 	padding: 5px 0 0 0;
 	width: 100%;
@@ -290,6 +290,7 @@ footer {
 
 #emailForm {
 	text-align: center;
+	padding: 5px 0 10px 0;
 	border-radius: 5px;
     background-color: #166123;
     margin: auto;
@@ -398,7 +399,8 @@ NAV
     left: 0;
     bottom: 0px;
     right: 0;
-    height: 48px;
+    height: 55px;
+    width: 100%;
 }
 
 .nonDraggableImage{
