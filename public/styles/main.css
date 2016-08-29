@@ -157,84 +157,33 @@ nav a.selected, nav a:hover {
   PAGE: PORTFOLIO - specific to homepage
 *******************/
 
-
-
-#gallery {
-	margin: 0 10% 0 10%;
-	padding: 0;
-	list-style: none;
-}
-
-
-#gallery li {
-	float: left;
-	width 100%;
-	margin: 1%;
-	background-color: #ffd1b3;
-	color: #6dc3c7;
-}
-
-
-#gallery li a p {
-	margin: -1%;
-	padding: 5%;
-	font-size: 0.75em;
-	color: #bdc3c7;
-}
-
-
-
-#socialWidgets{
-	display: inline;
-}
-#soundcloud {
-	clear: left;
-	padding: 1%;
-	margin: 0 0.2%;
-}
-
-.fb-page {
-	margin: 0 1%
-}
-
-fieldset {
-	border:1px solid #999;
-    border-radius:12px;
-    box-shadow:0 0 10px #fff;
-	width: 40%;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-legend {
-	font-family: "Comic Sans MS", cursive, sans-serif;
-	font-size: 20px;
-	color: #000;
-}
-
-/* 
-
-fieldset p {
-	clear: both;
-	padding: 5px;
-}
- */
-
-
-p > label > span {
-	color: #000;
-}
-
-span > div  {
-    position: fixed;
-    top: 20px;
-}
-
-form {
-	color: #599a68;
-}
+.tourDates {
+	border-radius: 15px;
+	margin: auto;
+	margin-top: 20px;
+	padding: 5px 0 20px 0;
+	width: 60%;
+	background-color: #802A2A;
 	
+}
 
+.tourShows {
+	margin: auto;
+	background-color: #933030;
+	height: 100px;
+	width: 95%;
+}
+
+.showList {
+	padding-right: 20px;
+	text-align: center;
+	list-style: none;
+	font-size: 10px;
+}
+
+.showHeader {
+	line-height: 150%;
+}
 /*******************
 	  FOOTER
 *******************/
@@ -328,6 +277,7 @@ footer {
 
 .slider {
 	margin:auto;
+	border-radius: 12px;
     height: 400px;
     width: 60%;
     overflow: hidden;
