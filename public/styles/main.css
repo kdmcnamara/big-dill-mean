@@ -191,13 +191,15 @@ body {
 
 
 
-footer {
+.footer {
 	font-size: 0.75em;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
 	text-align: center;
-	clear: both;
+	/* clear: both; */
 	padding-top: 50px;
 	color: #ccc;
-  margin: auto;
 }
 
 
@@ -351,7 +353,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: #D8D8D8;
 }
 
 div {
@@ -403,4 +405,13 @@ IMG GALLERY
         flex: 100%;
         max-width: 100%;
     }
+}
+
+
+/*********
+Music
+*********/
+
+.musicBtn {
+  text-align: center;
 }
