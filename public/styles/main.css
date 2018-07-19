@@ -4,9 +4,9 @@
 
 
 #wrapper {
-  max-width: 940px;
-  margin: 0 auto;
-  padding: 0 5%;
+  max-width: 100%;
+  margin: 0 0 0 0;
+  padding: 0;
 }
 
 
@@ -31,16 +31,13 @@ img {
 ********************/
 
 
-
-
-
 #logo {
 	text-align: center;
 	margin: 0;
 }
 
 h1 {
-	font-family: 'Changa One', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	margin: 15px 0;
 	text-align: center;
 	font-size: 1.75em;
@@ -48,23 +45,16 @@ h1 {
 	font-weight: normal;
 }
 
-h2{
+h2 {
 	font-size: 0.75em;
 	margin: -5px 0 0;
+  color: #000;
 	font-weight: normal;
 	text-align: center;
 }
 
-header {
-	background: #802A2A;
-	border-color: #802A2A;
-	/*float: left; */
-	margin: 0 0 30px 0;
-	padding: 5px 0 0 0;
-	width: 100%;
-}
 
-/* 
+/*
 div.fb-page{
 	clear: both;
 }
@@ -88,26 +78,48 @@ div.fb-page{
 
 
 nav  {
-	background: #802A2A;
-	text-align: center;
-	padding: 10px 0 0;
-	margin: 20px 0 0;
+	background: #000;
+	width: 100%;
+  top: 0;
+  margin: auto;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+nav h1 {
+  padding-top: 10px;
+  font-size: 20px;
 }
 
 nav ul {
 	list-style: none;
-	margin: 0 10px;
-	padding: 0;
-	display: 	
+  text-align: center;
+  height: 50px;
+	margin: 0 0 0 0;
+	padding: 10px 0 10px 0;
+  background: #fff;
+
 }
 
 nav li {
 	display: inline-block;
 }
 
-nav a {
-	font-weight: 800;
-	padding: 15px 10px;
+/* nav links */
+nav a, nav a:visited {
+  padding: 14px 16px;
+	color: #000;
+  font-weight: 800;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 50px;
+}
+
+nav > ul > li > a:hover {
+  text-decoration: none;
+  color: black;
+  background-color: #D3D3D3;
 }
 
 
@@ -118,61 +130,47 @@ nav a {
 
 
 
-#backpic {
-	background-image: url ("https://scontent-mia1-1.xx.fbcdn.net/hphotos-xtp1/v/t1.0-9/12118857_1500794840246418_3061131379015512765_n.jpg?oh=3df472d96c74b5a7a1baa0ca1b06573c&oe=5708E4E4");
-}
+
 
 /* logo text */
 h1, h2 {
-	color: #fff; 
-}
-
-/* links */
-a {
-	color: #6ab47b;
-}
-
-
-
-/* nav links */
-nav a, nav a:visited {
 	color: #fff;
 }
 
+
+
+
 /* site body */
 body {
-
-	background-color: #599a68;
-	color: #999;
+  margin: 0px 0px 0px 0px;
+  width: 100%;
+	background-color: #D3D3D3;
+  padding: 0;
 }
-
-/* selected nav link */
-nav a.selected, nav a:hover {
-	color: #32673f
-}
-
-
 
 /*******************
   PAGE: PORTFOLIO - specific to homepage
 *******************/
 
 .tourDates {
-	border-radius: 100px;
-	margin: auto;
-	margin-top: 20px;
+	margin: 20px;
+  margin-left: auto;
+  margin-right: auto;
 	padding: 5px 0 20px 0;
-	width: 60%;
-	background-color: #802A2A;
-	
+	width: 99%;
+	background-color: 	#fff;
 }
 
+
 .tourShows {
-	border-radius: 100px;
 	margin: auto;
-	background-color: #933030;
+	background-color: #787878;
 	height: 95%;
 	width: 95%;
+}
+
+.imgGal {
+
 }
 
 .showList {
@@ -182,6 +180,7 @@ nav a.selected, nav a:hover {
 	font-size: 10px;
 }
 
+
 .showHeader {
 	line-height: 150%;
 }
@@ -190,32 +189,73 @@ nav a.selected, nav a:hover {
 *******************/
 
 
- 
+
 footer {
 	font-size: 0.75em;
 	text-align: center;
 	clear: both;
 	padding-top: 50px;
-	color: #ccc;	
+	color: #ccc;
+  margin: auto;
 }
-
-/**************
-	jQuery
-**************/
-
 
 
 
 /************
 	ABOUT
-	
+
 ************/
 
+.info {
+  margin: 30px 10px 0 10px;
+  background-color: #fff;
+  border-radius: 20px;
+}
 
+div.members {
+	border-radius: 20px;
+
+	background-color: #fff;
+	height: 95%;
+	width: 45%;
+  display: block;
+  margin: 30px 10px 0 10px;
+}
+
+.memberList {
+	padding-right: 20px;
+	text-align: center;
+	list-style: none;
+	font-size: 10px;
+}
+
+.memberHeader {
+	line-height: 150%;
+}
+
+img.memberPic {
+	width: 100%;
+  min-width: 70px;
+	height: 300px;
+	margin-bottom: 20px;
+	border-radius: 50%;
+}
+
+.img-left {
+    float:left;
+}
+
+.img-right {
+    float:right;
+}
+/************
+	CONTACT
+
+************/
 
 .button {
 	display: block;
-	background: #802A2A;
+	background: #000;
 	font-size: 25px;
 	border-radius: 25px;
 	margin: auto;
@@ -230,23 +270,29 @@ footer {
 	margin-bottom: 15px;
 }
 
+#contactInfo {
+  margin: auto;
+  margin-top: 5px;
+  width: 96%;
+}
 
-
-/************
-	CONTACT
-	
-************/
-
+#contactInfo h1, h2 {
+  color: #000;
+}
 
 #emailForm {
 	text-align: center;
-	padding: 5px 0 10px 0;
 	border-radius: 5px;
-    background-color: #166123;
-    margin: auto;
-	width: 60%;
+  background-color: #fff;
+  margin: auto;
+  margin-top: 5px;
+	width: 96%;
 }
 
+/*
+.contactHeader {
+  color: #000;
+}
 #contactMessageWrapper {
 	margin: auto;
 	margin-top: 2%;
@@ -257,7 +303,7 @@ footer {
 }
 
 .contactMessageA {
-	color: #fff;
+  color: #000;
 	font-size: 18px;
 	list-style: none;
 	text-align: center;
@@ -270,148 +316,83 @@ footer {
 	list-style: none;
 	text-align: center;
 	margin: 0 15px 0 0;
-}
+} */
 
-/*********/
+/****
+*****/
 
-
-
-.slider {
-	margin:auto;
-	border-radius: 100px;
-    height: 400px;
-    width: 60%;
-    overflow: hidden;
-    position: relative;
-    background: #e6e6e6;
-    border: 20px solid #802A2A;
-
-}
-
-.slide {
-    position: absolute;
-    height: 400px;
-    width: 3000px;
-    top: 0;
-    left: 0;
-    top: -50px;
-   
-}
-
-
-.arrow {
-    position: absolute;
-    z-index: 1002;
-    display: block;
-    top: 50%;
-    margin-top: -35px;
-    width: 16px;
-    height: 27px;
-    outline: none;
-    cursor: pointer;
-    background: url(../assets/img/blank.gif) no-repeat;
-}
-
-.arrow.prev {
-    opacity: 0.2;
-    left: 20px;
-    background-image: url(../assets/img/paddle_prev_999.png);
-    transition: 0.2s linear all;
-}
-
-.arrow.next {
-    opacity: 0.2;
-    right: 20px;
-    background-image: url(../assets/img/paddle_next_999.png);
-    transition: 0.2s linear all;
-}
-
-.arrow.prev:hover {
-    opacity: 1;
-    background-image: url(../assets/img/paddle_prev_fff.png);
-}
-
-.arrow.next:hover {
-    opacity: 1;
-    background-image: url(../assets/img/paddle_next_fff.png);
-}
-
-
-
-/*---------------------------------------------------------
-NAV
----------------------------------------------------------*/
-
-.nav {
-    text-align: center;
-    display: block;
-    position: absolute;
-    z-index: 1002;
-    left: 0;
-    bottom: 0px;
-    right: 0;
-    height: 55px;
+input[type=text], select {
     width: 100%;
-}
-
-.nonDraggableImage{
-    -webkit-user-drag: none;
-}
-
-.nav .wrapper {
-    margin: 0 auto;
-    width: 100%;
-    padding: 1em 0 .8em;
-}
-
-.nav ul {
-    margin: 0;
-    width: 100%;
-}
-
-.nav .dot, .nav .dot a {
+    padding: 12px 20px;
+    margin: 8px 0;
     display: inline-block;
-    zoom: 1;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
-.dots .dot {
-    position: relative;
-    bottom: 20px;
-    margin: 0 8px;
-    width: 12px;
-    height: 5px;
-    
+input[type=submit] {
+    width: 100%;
+    background-color: #989898;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
-.dots .dot a {
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    width: 6px;
-    height: 6px;
-    text-indent: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    background: #FFF;
-    border: 1px solid transparent;
-    outline: none;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
-    -webkit-transition: background-color 0.25s, border-color 0.25s;
-    -moz-transition: background-color 0.25s, border-color 0.25s;
-    transition: background-color 0.25s, border-color 0.25s;
+input[type=submit]:hover {
+    background-color: #45a049;
 }
 
-.dots .dot a.active {
-    border-color: #FFF;
-    background-color: transparent;
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
 }
 
+/*************
+IMG GALLERY
+*************/
 
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px 4px 4px;
+    background-color: #fff;
+    margin: 1% .5% 0 .5%;
+}
 
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 24.2%;
+    padding: 0 4px;
+}
 
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
 
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}

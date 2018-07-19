@@ -10,7 +10,7 @@ var http = require('http');
 var app = express();
 
 require('./database');
-require('./seed')
+require('./seed');
 
 
 
@@ -23,5 +23,5 @@ app.use('/api', router);
 var server = http.createServer(app);
 
 app.listen(process.env.PORT || 8080, () =>  {
-	console.log("Server is running on port 8080!");
+	console.log("Server is running on port 3000!");
 });

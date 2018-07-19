@@ -1,4 +1,4 @@
-<!doctype html> 
+<!doctype html>
 <html lang="en">
 <head>
   <title></title>
@@ -13,19 +13,24 @@
 
 
   <!-- <form method="post" action="#" id="contactForm" ng-init="email.submitted = false"> -->
-  
+    <div id="contactInfo">
+      <h1>For Booking:</h1><br></br>
+      <h2>Kevin McNamara</h2><br></br>
+      <h2>414 248 1593</h2><br></br>
+      <h2>bigdillandtheboys@gmail.com<br></br>
+    </div>
     <div id="emailForm" ng-controller="formCtrl">
       <div class="col-sm-8 col-sm-offset-2 text-center">
         <form>
           <div class="form-group">
-            <h1 id="contactHeader">Contact Us!:</h1>
+            <h1 class="contactHeader" style="color: #989898;">Contact Us!:</h1>
             <hr>
             <br><br>
-            <h1>Email Address:</h1><br>
-            <input type="text" class="form-control input-lg text-center" ng-model="formData.address"><br>
-            <h1>Message:</h1><br>
+            <h1 class="contactHeader" style="color: #989898;">Email Address:</h1><br>
+            <input type="text" class="form-control-input-lg-text-center" ng-model="formData.address"><br>
+            <h1 class="contactHeader" style="color: #989898;">Message:</h1><br>
             <textarea rows="6" cols="30" ng-model="formData.message"></textarea>
-            <h1>Check to Join Our Newsletter!</h1>
+            <h1 class="contactHeader" style="color: #989898;">Check to Join Our Newsletter!</h1>
             <input class="checkbox" type="checkbox" ng-model="formData.newSubscriber">
             <input class="button" type="submit" ng-click="createEmail()">
           </div>
@@ -33,13 +38,7 @@
     </div>
 <!-- </form> -->
 
-  <div id="contactMessageWrapper" ng-init="email.submitted = false">
-    <ul>
-      <li class="contactMessageA"><h2 class="contactMessage">For booking inquiries, please email: bigdillandtheboys@gmail.com</h2></li>
-      <li  class="contactMessage" ng-show="email.submitted"><h2 class="contactMessage">Your message has been sent. Thank you!</h2></li> 
-      
-    </ul>
-  </div>
+
 
   <footer></footer>
 

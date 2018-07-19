@@ -1,19 +1,68 @@
 angular.module('bigDillApp')
 .controller('tourCtrl', function($scope, dataService, $http) {
+    //
+    // $scope.images = [
+    //   {
+    //     src: "../resources/high.jpg"
+    //   },
+    //   {
+    //     src: "../resources/greenroom.jpg"
+    //   },
+    //   {
+    //     src: "../resources/IMG_0777.jpeg"
+    //   },
+    //   {
+    //     src: "../resources/studio.jpg"
+    //   },
+    //   {
+    //     src: "../resources/upchrist.jpg"
+    //   },
+    //   {
+    //     src: "../resources/sett.jpg"
+    //   }
+    // ]
 
     $scope.shows = [
         {
-            name: "The Rumble Roots with Big Dill and the Boys at Guu's on Main",
-            date: "September 10, 2016"
+            name: "Harmony Bar and Grille - Madison, WI",
+            date: "July 21, 2018"
         },
         {
-            name: "Big Dill and the Boys at Linneman's - Milwaukee",
-            date: "September 24, 2016"
+            name: "High Noon Saloon - Madison, WI",
+            date: "August 17, 2018"
         },
         {
-            name: "The Hippie Hideout",
-            date: "November 7, 2016"
+            name: "Linneman's Riverwest Inn - Milwaukee, WI",
+            date: "August 18, 2018"
+        },
+        {
+            name: "Gabe's - Iowa City, IA",
+            date: "August 19, 2018"
+        },
+        {
+            name: "Sancho's - Denver, CO",
+            date: "August 20, 2018"
+        },
+        {
+            name: "Be On Key - Denver, CO",
+            date: "August 22, 2018"
+        },
+        {
+            name: "Californos - Kansas City, KS",
+            date: "August 22, 2018"
+        },
+        {
+            name: "Melody Inn - Indianapolis, IN",
+            date: "August 29, 2018"
+        },
+        {
+            name: "Elbo Room - Chicago, IL",
+            date: "August 30, 2018"
+        },
+        {
+            name: "Ruby Lounge - Madison, WI",
+            date: "August 31, 2018"
         }
     ];
-    
+
 });

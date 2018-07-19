@@ -1,23 +1,22 @@
 [
   {
     "name" : "Kevin McNamara",
-    "bio" : "Guitar/Vocals"
+    "bio" : "Guitar/Vocals",
+    "pic" : "../resources/Kevin.jpg"
   },
   {
     "name" : "Will Hansen",
-    "bio" : "Guitar/Vocals"
+    "bio" : "Guitar/Vocals",
+    "pic" : "../resources/Will.jpg"
   },
   {
     "name" : "Brendan Andrews",
-    "bio" : "Bass Guitar"
-  },
-  {
-    "name" : "Vince Ruzicka",
-    "bio" : "Keys"
+    "bio" : "Bass Guitar",
+    "pic" : "../resources/Brendan.jpg"
   },
   {
     "name" : "Nick Spiroff",
-    "bio" : "Drums"
+    "bio" : "Drums",
+    "pic" : "../resources/Nick.jpg"
   }
 ]
-  
