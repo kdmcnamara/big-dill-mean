@@ -215,7 +215,6 @@ footer {
 
 div.members {
 	border-radius: 20px;
-
 	background-color: #fff;
 	height: 95%;
 	width: 45%;
@@ -235,7 +234,7 @@ div.members {
 }
 
 img.memberPic {
-	width: 100%;
+	width: 80%;
   min-width: 70px;
 	height: 300px;
 	margin-bottom: 20px;
@@ -253,34 +252,6 @@ img.memberPic {
 	CONTACT
 
 ************/
-
-div.members {
-	border-radius: 100px;
-	margin: auto;
-	background-color: #933030;
-	height: 95%;
-	width: 50%;
-
-}
-
-.memberList {
-	padding-right: 20px;
-	text-align: center;
-	list-style: none;
-	font-size: 10px;
-}
-
-.memberHeader {
-	line-height: 150%;
-}
-
-img.memberPic {
-	width: 50%;
-	height: 300px;
-	margin-bottom: 20px;
-	border-radius: 50%;
-}
-
 
 
 
