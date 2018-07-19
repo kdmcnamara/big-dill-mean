@@ -26,7 +26,7 @@ Big Dill and the Boys are releasing their first studio album titled “Dead on t
   <div class="members" ng-repeat="member in members" ng-controller="aboutCtrl" ng-class-odd="'img-left'" ng-class-even="'img-right'">
       <ul class="memberList">
         <li><h1 class="memberHeader" style="color: #000; font-size: 12px;">{{member.name}}</h1></li>
-        <a href=""><img class="memberPic" src="{{member.pic}}" alt="" ng-click="zoom(member); zoom = true"></a>
+        <a href=""><img class="memberPic" src="{{member.pic}}" alt="" ng-click="zoom(member)"></a>
         <li><h2 class="memberHeader" style="color: #000; font-size: 12px;">{{member.bio}}</h2></li>
       </ul>
     </div>
