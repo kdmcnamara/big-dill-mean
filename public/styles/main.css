@@ -17,9 +17,10 @@ a{
 
 img.displayed {
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
+	margin: auto;
+	margin-top: 20px;
 	border-color: #599a68;
+	max-width: 98%;
 }
 
 img {
@@ -253,6 +254,41 @@ img.memberPic {
 
 ************/
 
+div.members {
+	border-radius: 100px;
+	margin: auto;
+	background-color: #933030;
+	height: 95%;
+	width: 50%;
+
+}
+
+.memberList {
+	padding-right: 20px;
+	text-align: center;
+	list-style: none;
+	font-size: 10px;
+}
+
+.memberHeader {
+	line-height: 150%;
+}
+
+img.memberPic {
+	width: 50%;
+	height: 300px;
+	margin-bottom: 20px;
+	border-radius: 50%;
+}
+
+
+
+
+/************
+	CONTACT
+
+************/
+
 .button {
 	display: block;
 	background: #000;
@@ -261,9 +297,9 @@ img.memberPic {
 	margin: auto;
 }
 
-.checkbox {
+input[type="checkbox"] {
 	display: block;
-	background: #802A2A;
+	background-color: #802A2A;
 	font-size: 25px;
 	border-radius: 25px;
 	margin: auto;
@@ -298,8 +334,9 @@ img.memberPic {
 	margin-top: 2%;
 	padding-top: 20px;
 	background: #802A2A;
-	width: 43%;
+	width: 60%;
 	word-wrap: break-word;
+	border-radius: 100px;
 }
 
 .contactMessageA {
