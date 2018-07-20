@@ -6,6 +6,8 @@ angular.module('bigDillApp')
   $scope.Brendan = false;
   $scope.Nick = false;
 
+
+
   console.log($scope.zoom);
 
   $scope.zoom = function(member) {
@@ -22,6 +24,13 @@ angular.module('bigDillApp')
     if(member.name == "Nick Spiroff") {
       $scope.Nick = true;
     }
+
+    $scope.src = member.pic;
+    console.log($scope.src);
+
   }
+
+  
+
 
 });

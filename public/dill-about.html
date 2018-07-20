@@ -18,7 +18,7 @@ With weekly shows throughout Wisconsin and occasional trips across the country t
 
  Big Dill and the Boys aim to improve their sound as they continue to make new music and improve upon their current material. Their sound expands upon music that came out of the 1960’s and 1970’s by an array of artists. The rhythmic and melodic interplay between the guitars, backed by a funky low end and punchy beats is what makes the sound unique. A live Big Dill and the Boys performance will take the audience on a journey that can only be felt at the show. Their studio work brings their songs into a different light that further exemplifies the band’s ability to create.<br></br> <br></br>
 
-Big Dill and the Boys are releasing their first studio album titled “Dead on the Run” on August 17. With the release of their album, they are playing shows in Wisconsin, Iowa, Indiana, Colorado, among other states, in their Dead on the Run/ Smokin’ Beers 2018 summer tour. Find yourself at the next Big Dill show in your area!</h2>
+Big Dill and the Boys are releasing their first studio album titled “Dead on the Run” on August 17. With the release of their album, they are playing shows in Wisconsin, Iowa, Indiana, Colorado, among other states, in their Dead on the Run Summer Tour. Find yourself at the next Big Dill show in your area!</h2>
 
   </div>
 
@@ -26,8 +26,19 @@ Big Dill and the Boys are releasing their first studio album titled “Dead on t
   <div class="members" ng-repeat="member in members" ng-controller="aboutCtrl" ng-class-odd="'img-left'" ng-class-even="'img-right'">
       <ul class="memberList">
         <li><h1 class="memberHeader" style="color: #000; font-size: 12px;">{{member.name}}</h1></li>
-        <a href=""><img class="memberPic" src="{{member.pic}}" alt="" ng-click="zoom(member)"></a>
+        <a href=""><img class="memberPic" id ="iImg" src="{{member.pic}}" alt="" ng-click="zoom(member); click = true"></a>
         <li><h2 class="memberHeader" style="color: #000; font-size: 12px;">{{member.bio}}</h2></li>
+        <div id="myModal" ng-class="{'click-on': click, 'modal': !click}">
+
+          <!-- The Close Button -->
+          <span class="close" ng-click="click = false">&times;</span>
+
+          <!-- Modal Content (The Image) -->
+          <img ng-class="click == true" src={{src}} class="modal-content" id="img01">
+
+          <!-- Modal Caption (Image Text) -->
+        <div id="caption"></div>
+        </div>
       </ul>
   </div>
 
