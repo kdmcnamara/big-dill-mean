@@ -49,7 +49,7 @@ angular.module('bigDillApp')
         },
         {
             name: "Californos - Kansas City, KS",
-            date: "August 22, 2018"
+            date: "August 23, 2018"
         },
         {
             name: "Melody Inn - Indianapolis, IN",
