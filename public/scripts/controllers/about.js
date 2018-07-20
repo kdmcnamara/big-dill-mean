@@ -30,7 +30,9 @@ angular.module('bigDillApp')
 
   }
 
-  
+  $scope.log = function() {
+    console.log($scope.click);
+  }
 
 
 });

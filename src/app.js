@@ -4,13 +4,27 @@ var express = require('express');
 var parser = require('body-parser');
 var router = require('./api');
 var Email = require('./models/email.js');
-
+var path = require('path');
 var http = require('http');
 
 var app = express();
 
 require('./database');
 require('./seed');
+
+app.get('/', function(req, res) {
+	res.sendFile(path.resolve('public/index.html'));
+});
+app.get('/about', function(req, res) {
+	res.sendFile(path.resolve('public/dill-about.html'));
+});
+app.get('/contact', function(req, res) {
+	res.sendFile(path.resolve('public/dill-contact.html'));
+});
+app.get('/music', function(req, res) {
+	res.sendFile(path.resolve('public/dill-music.html'));
+});
+
 
 
 
