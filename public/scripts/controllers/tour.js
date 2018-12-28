@@ -24,8 +24,7 @@ angular.module('bigDillApp')
 
     $scope.shows = [
         {
-            name: "Hippie Hideout - Madison, WI",
-            date: "November 12, 2018"
+            
         }
     ];
 
